@@ -11,9 +11,9 @@
     <script type="importmap">
     {
       "imports": {
-        "react": "https://cdn.jsdelivr.net/npm/react@18.2.0/+esm",
-        "react/jsx-runtime": "https://cdn.jsdelivr.net/npm/react@18.2.0/+esm",
-        "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm",
+        "react": "https://esm.sh/react@18.2.0",
+        "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime",
+        "react-dom": "https://esm.sh/react-dom@18.2.0",
         "framer-motion": "https://esm.sh/framer-motion@11.18.0?external=react,react-dom"
       }
     }
@@ -25,7 +25,7 @@
       await import('react-dom');
       await import('framer-motion');
     } catch(e) {
-      document.getElementById('root').innerHTML = '<div style="padding:40px;color:#ef4444;font-family:monospace;text-align:center"><h2>⚠️ React 核心库加载失败</h2><p style="color:#aaa;margin-top:12px">无法从 CDN 加载依赖库，请检查网络连接或刷新重试。</p><p style="color:#666;font-size:12px;margin-top:8px">CDN: jsdelivr + esm.sh (国内网络可访问)</p></div>';
+      document.getElementById('root').innerHTML = '<div style="padding:40px;color:#ef4444;font-family:monospace;text-align:center"><h2>⚠️ React 核心库加载失败</h2><p style="color:#aaa;margin-top:12px">无法从 CDN 加载依赖库，请检查网络连接或刷新重试。</p><p style="color:#666;font-size:12px;margin-top:8px">CDN: esm.sh (国内网络可访问)</p></div>';
     }
     </script>
     <style>
